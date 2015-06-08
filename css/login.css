@@ -4,7 +4,7 @@ html {
 	-ms-text-size-adjust: 100%;
 }
 body{
-	background: url(../resources/img/loginmainback.jpg) repeat 0 0;
+	background: url(../resources/img/xv.png) repeat 0 0;
 }
 h1,h2,h3,h4,h5,h6{
 	font-family: 'Bree Serif',sans-serif;
@@ -14,10 +14,9 @@ p,div{
 }
 .LoginSignupContainer{
 	font-family: 'Bree Serif',sans-serif;
-	background: url(../resources/img/loginsecondback.jpg) center repeat;
-	position:fixed;
-	top:30%;
-	left:30%;
+	background: url(../resources/img/containerback.png) center repeat;
+	max-width: 496px;
+
 	margin-left:10px;
 	margin-right:10px;
 	margin-top:10px;
