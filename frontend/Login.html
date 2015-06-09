@@ -90,29 +90,31 @@
             <div id="myTabContent" class="tab-content">
               <!-- First Tab -->
               <div role="tabpanel" class="tab-pane fade in active" id="login">
-                <form class="form-login">
+                <form class="form-login" method="post" action="../backend/user/login.php">
                   <h3 class="form-login-heading">Please Login</h3>
                   <label for="inputEmail" class="sr-only">Username</label>
-                  <input type="email" id="email" class="form-control" placeholder="Username" required="true" autofocus="">
+                  <input type="username" name="acc" class="form-control" placeholder="Username" required="true" autofocus="">
                   <label for="inputPassword" class="sr-only">Password</label>
-                  <input type="password" id="pw" class="form-control" placeholder="Password" required="true">
-                  <button class="btn btn-lg btn-primary btn-block" id="login_btn">Login</button>
+                  <input type="password" name="pw" class="form-control" placeholder="Password" required="true">
+                  <!-- <button class="btn btn-lg btn-primary btn-block" id="login_btn">Login</button> -->
+                  <input type="submit" name="submit" value="Log In">
                 </form>
               </div>
               <!-- End of First Tab -->
               <!-- Second Tab -->
               <div role="tabpanel" class="tab-pane fade" id="signup">
-                <form class="form-signup">
+                <form class="form-signup" method="post" action="../backend/user/signup.php">
                   <h3 class="form-signup-heading">Please Sign Up</h3>
                   <label for="inputUsername" class="sr-only">Username</label>
-                  <input type="username" id="username" class="form-control" placeholder="Username" required="true" autofocus="">
+                  <input type="username" name="acc" class="form-control" placeholder="Username" required="true" autofocus="">
                   <label for="inputEmail" class="sr-only">Email address</label>
-                  <input type="email" id="email" class="form-control" placeholder="Email address" required="true" autofocus="">
+                  <input type="email" name="email" class="form-control" placeholder="Email address" required="true" autofocus="">
                   <label for="inputPassword" class="sr-only">Password</label>
-                  <input type="password" id="pw" class="form-control" placeholder="Password" required="true">
+                  <input type="password" name="pw" class="form-control" placeholder="Password" required="true">
                   <label for="inputPassword" class="sr-only">Re-Enter Password</label>
-                  <input type="password" id="repw" class="form-control" placeholder="Re-Enter Password" required="true">
-                  <button class="btn btn-lg btn-primary btn-block" id="signup_btn">Sign up</button>
+                  <input type="password" name="repw" class="form-control" placeholder="Re-Enter Password" required="true">
+                  <!-- <button class="btn btn-lg btn-primary btn-block" id="signup_btn">Sign up</button> -->
+                  <input type="submit" name="submit" value="Sign up">
                 </form>
               </div>
               <!-- End of Second Tab -->
